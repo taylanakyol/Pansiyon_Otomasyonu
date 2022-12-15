@@ -1,0 +1,12 @@
+C:\Users\Asus\Desktop\Pansiyon_Otomasyonu\Pansiyon_Otomasyonu\Pansiyon_Otomasyonu\bin\Debug\Pansiyon_Otomasyonu.exe.config
+C:\Users\Asus\Desktop\Pansiyon_Otomasyonu\Pansiyon_Otomasyonu\Pansiyon_Otomasyonu\bin\Debug\Pansiyon_Otomasyonu.exe
+C:\Users\Asus\Desktop\Pansiyon_Otomasyonu\Pansiyon_Otomasyonu\Pansiyon_Otomasyonu\bin\Debug\Pansiyon_Otomasyonu.pdb
+C:\Users\Asus\Desktop\Pansiyon_Otomasyonu\Pansiyon_Otomasyonu\Pansiyon_Otomasyonu\obj\Debug\Pansiyon_Otomasyonu.csproj.AssemblyReference.cache
+C:\Users\Asus\Desktop\Pansiyon_Otomasyonu\Pansiyon_Otomasyonu\Pansiyon_Otomasyonu\obj\Debug\Pansiyon_Otomasyonu.csproj.SuggestedBindingRedirects.cache
+C:\Users\Asus\Desktop\Pansiyon_Otomasyonu\Pansiyon_Otomasyonu\Pansiyon_Otomasyonu\obj\Debug\Pansiyon_Otomasyonu.Form1.resources
+C:\Users\Asus\Desktop\Pansiyon_Otomasyonu\Pansiyon_Otomasyonu\Pansiyon_Otomasyonu\obj\Debug\Pansiyon_Otomasyonu.Properties.Resources.resources
+C:\Users\Asus\Desktop\Pansiyon_Otomasyonu\Pansiyon_Otomasyonu\Pansiyon_Otomasyonu\obj\Debug\Pansiyon_Otomasyonu.csproj.GenerateResource.cache
+C:\Users\Asus\Desktop\Pansiyon_Otomasyonu\Pansiyon_Otomasyonu\Pansiyon_Otomasyonu\obj\Debug\Pansiyon_Otomasyonu.csproj.CoreCompileInputs.cache
+C:\Users\Asus\Desktop\Pansiyon_Otomasyonu\Pansiyon_Otomasyonu\Pansiyon_Otomasyonu\obj\Debug\Pansiyon_Otomasyonu.exe
+C:\Users\Asus\Desktop\Pansiyon_Otomasyonu\Pansiyon_Otomasyonu\Pansiyon_Otomasyonu\obj\Debug\Pansiyon_Otomasyonu.pdb
+C:\Users\Asus\Desktop\Pansiyon_Otomasyonu\Pansiyon_Otomasyonu\Pansiyon_Otomasyonu\obj\Debug\Pansiyon_Otomasyonu.FrmYeniMusteri.resources
