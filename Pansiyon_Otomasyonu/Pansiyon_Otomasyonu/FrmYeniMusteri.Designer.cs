@@ -29,8 +29,11 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.TxtUcret = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.TxtUcret = new System.Windows.Forms.TextBox();
             this.BtnKaydet = new System.Windows.Forms.Button();
             this.DtpCikisTarihi = new System.Windows.Forms.DateTimePicker();
             this.DtpGirisTarihi = new System.Windows.Forms.DateTimePicker();
@@ -60,17 +63,16 @@
             this.BtnOda101 = new System.Windows.Forms.Button();
             this.BtnBosOda = new System.Windows.Forms.Button();
             this.BtnDoluOda = new System.Windows.Forms.Button();
-            this.label9 = new System.Windows.Forms.Label();
-            this.CmbCinsiyet = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.CmbCinsiyet);
+            this.groupBox1.Controls.Add(this.label11);
+            this.groupBox1.Controls.Add(this.label10);
+            this.groupBox1.Controls.Add(this.comboBox1);
             this.groupBox1.Controls.Add(this.label9);
-            this.groupBox1.Controls.Add(this.textBox1);
             this.groupBox1.Controls.Add(this.TxtUcret);
             this.groupBox1.Controls.Add(this.BtnKaydet);
             this.groupBox1.Controls.Add(this.DtpCikisTarihi);
@@ -96,24 +98,58 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Müşteri Bilgileri";
             // 
-            // textBox1
+            // label11
             // 
-            this.textBox1.BackColor = System.Drawing.SystemColors.Info;
-            this.textBox1.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.textBox1.Location = new System.Drawing.Point(158, 428);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(251, 31);
-            this.textBox1.TabIndex = 36;
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label11.Location = new System.Drawing.Point(73, 433);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(55, 23);
+            this.label11.TabIndex = 40;
+            this.label11.Text = "Ücret:";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(395, 531);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(14, 16);
+            this.label10.TabIndex = 39;
+            this.label10.Text = "0";
+            this.label10.Visible = false;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.BackColor = System.Drawing.SystemColors.Info;
+            this.comboBox1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Bay",
+            "Bayan"});
+            this.comboBox1.Location = new System.Drawing.Point(158, 118);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(251, 36);
+            this.comboBox1.TabIndex = 38;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label9.Location = new System.Drawing.Point(54, 126);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(74, 23);
+            this.label9.TabIndex = 37;
+            this.label9.Text = "Cinsiyet:";
             // 
             // TxtUcret
             // 
-            this.TxtUcret.AutoSize = true;
-            this.TxtUcret.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.TxtUcret.Location = new System.Drawing.Point(73, 433);
+            this.TxtUcret.BackColor = System.Drawing.SystemColors.Info;
+            this.TxtUcret.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.TxtUcret.Location = new System.Drawing.Point(158, 428);
             this.TxtUcret.Name = "TxtUcret";
-            this.TxtUcret.Size = new System.Drawing.Size(55, 23);
-            this.TxtUcret.TabIndex = 35;
-            this.TxtUcret.Text = "Ücret:";
+            this.TxtUcret.Size = new System.Drawing.Size(251, 31);
+            this.TxtUcret.TabIndex = 36;
+            this.TxtUcret.TextChanged += new System.EventHandler(this.TxtUcret_TextChanged);
             // 
             // BtnKaydet
             // 
@@ -124,6 +160,7 @@
             this.BtnKaydet.TabIndex = 34;
             this.BtnKaydet.Text = "Kaydet";
             this.BtnKaydet.UseVisualStyleBackColor = true;
+            this.BtnKaydet.Click += new System.EventHandler(this.BtnKaydet_Click);
             // 
             // DtpCikisTarihi
             // 
@@ -132,6 +169,7 @@
             this.DtpCikisTarihi.Name = "DtpCikisTarihi";
             this.DtpCikisTarihi.Size = new System.Drawing.Size(251, 31);
             this.DtpCikisTarihi.TabIndex = 33;
+            this.DtpCikisTarihi.ValueChanged += new System.EventHandler(this.DtpCikisTarihi_ValueChanged);
             // 
             // DtpGirisTarihi
             // 
@@ -166,6 +204,7 @@
             this.TxtKimlikNo.BackColor = System.Drawing.SystemColors.Info;
             this.TxtKimlikNo.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.TxtKimlikNo.Location = new System.Drawing.Point(158, 252);
+            this.TxtKimlikNo.MaxLength = 11;
             this.TxtKimlikNo.Name = "TxtKimlikNo";
             this.TxtKimlikNo.Size = new System.Drawing.Size(251, 31);
             this.TxtKimlikNo.TabIndex = 29;
@@ -429,29 +468,6 @@
             this.BtnDoluOda.UseVisualStyleBackColor = false;
             this.BtnDoluOda.Click += new System.EventHandler(this.BtnDoluOda_Click);
             // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label9.Location = new System.Drawing.Point(54, 126);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(74, 23);
-            this.label9.TabIndex = 37;
-            this.label9.Text = "Cinsiyet:";
-            // 
-            // CmbCinsiyet
-            // 
-            this.CmbCinsiyet.BackColor = System.Drawing.SystemColors.Info;
-            this.CmbCinsiyet.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.CmbCinsiyet.FormattingEnabled = true;
-            this.CmbCinsiyet.Items.AddRange(new object[] {
-            "Bay",
-            "Bayan"});
-            this.CmbCinsiyet.Location = new System.Drawing.Point(158, 118);
-            this.CmbCinsiyet.Name = "CmbCinsiyet";
-            this.CmbCinsiyet.Size = new System.Drawing.Size(251, 36);
-            this.CmbCinsiyet.TabIndex = 38;
-            // 
             // FrmYeniMusteri
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -506,9 +522,10 @@
         private System.Windows.Forms.Button BtnOda109;
         private System.Windows.Forms.Button BtnBosOda;
         private System.Windows.Forms.Button BtnDoluOda;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label TxtUcret;
-        private System.Windows.Forms.ComboBox CmbCinsiyet;
+        private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.TextBox TxtUcret;
     }
 }

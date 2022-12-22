@@ -76,6 +76,7 @@
             this.TxtSifre.Name = "TxtSifre";
             this.TxtSifre.Size = new System.Drawing.Size(275, 30);
             this.TxtSifre.TabIndex = 3;
+            this.TxtSifre.UseSystemPasswordChar = true;
             // 
             // BtnGirisYap
             // 
@@ -86,6 +87,7 @@
             this.BtnGirisYap.TabIndex = 4;
             this.BtnGirisYap.Text = "Giriş Yap";
             this.BtnGirisYap.UseVisualStyleBackColor = true;
+            this.BtnGirisYap.Click += new System.EventHandler(this.BtnGirisYap_Click);
             // 
             // label3
             // 

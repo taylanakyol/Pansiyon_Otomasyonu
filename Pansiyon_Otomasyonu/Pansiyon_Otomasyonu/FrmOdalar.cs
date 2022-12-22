@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Pansiyon_Otomasyonu
 {
-    public partial class FrmAdminGiris : Form
+    public partial class FrmOdalar : Form
     {
-        public FrmAdminGiris()
+        public FrmOdalar()
         {
             InitializeComponent();
         }
