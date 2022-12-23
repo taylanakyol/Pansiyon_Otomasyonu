@@ -24,3 +24,4 @@ C:\Users\taylan.akyol\Desktop\Pansiyon\Pansiyon_Otomasyonu\Pansiyon_Otomasyonu\o
 C:\Users\taylan.akyol\Desktop\Pansiyon\Pansiyon_Otomasyonu\Pansiyon_Otomasyonu\obj\Debug\Pansiyon_Otomasyonu.FrmAnaForm.resources
 C:\Users\taylan.akyol\Desktop\Pansiyon\Pansiyon_Otomasyonu\Pansiyon_Otomasyonu\obj\Debug\Pansiyon_Otomasyonu.FrmAdminGiris.resources
 C:\Users\taylan.akyol\Desktop\Pansiyon\Pansiyon_Otomasyonu\Pansiyon_Otomasyonu\obj\Debug\Pansiyon_Otomasyonu.FrmOdalar.resources
+C:\Users\taylan.akyol\Desktop\Pansiyon\Pansiyon_Otomasyonu\Pansiyon_Otomasyonu\obj\Debug\Pansiyon_Otomasyonu.FrmMusteriler.resources

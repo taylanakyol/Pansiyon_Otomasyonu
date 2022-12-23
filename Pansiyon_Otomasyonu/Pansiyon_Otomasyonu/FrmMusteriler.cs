@@ -23,6 +23,7 @@ namespace Pansiyon_Otomasyonu
 
         private void verilergoster()
         {
+            listView1.Items.Clear();
             baglanti.Open();
             SqlCommand komut = new SqlCommand("select * from MusteriEkle", baglanti);
             SqlDataReader oku= komut.ExecuteReader();
