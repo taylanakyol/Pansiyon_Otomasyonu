@@ -483,6 +483,7 @@
             this.MinimizeBox = false;
             this.Name = "FrmYeniMusteri";
             this.Text = "Yeni Müşteri Ekle";
+            this.Load += new System.EventHandler(this.FrmYeniMusteri_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
