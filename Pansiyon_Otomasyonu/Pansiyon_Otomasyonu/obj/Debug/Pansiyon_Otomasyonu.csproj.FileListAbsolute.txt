@@ -3,7 +3,6 @@ C:\Users\Asus\Desktop\Pansiyon_Otomasyonu\Pansiyon_Otomasyonu\Pansiyon_Otomasyon
 C:\Users\Asus\Desktop\Pansiyon_Otomasyonu\Pansiyon_Otomasyonu\Pansiyon_Otomasyonu\bin\Debug\Pansiyon_Otomasyonu.pdb
 C:\Users\Asus\Desktop\Pansiyon_Otomasyonu\Pansiyon_Otomasyonu\Pansiyon_Otomasyonu\obj\Debug\Pansiyon_Otomasyonu.csproj.AssemblyReference.cache
 C:\Users\Asus\Desktop\Pansiyon_Otomasyonu\Pansiyon_Otomasyonu\Pansiyon_Otomasyonu\obj\Debug\Pansiyon_Otomasyonu.csproj.SuggestedBindingRedirects.cache
-C:\Users\Asus\Desktop\Pansiyon_Otomasyonu\Pansiyon_Otomasyonu\Pansiyon_Otomasyonu\obj\Debug\Pansiyon_Otomasyonu.Form1.resources
 C:\Users\Asus\Desktop\Pansiyon_Otomasyonu\Pansiyon_Otomasyonu\Pansiyon_Otomasyonu\obj\Debug\Pansiyon_Otomasyonu.Properties.Resources.resources
 C:\Users\Asus\Desktop\Pansiyon_Otomasyonu\Pansiyon_Otomasyonu\Pansiyon_Otomasyonu\obj\Debug\Pansiyon_Otomasyonu.csproj.GenerateResource.cache
 C:\Users\Asus\Desktop\Pansiyon_Otomasyonu\Pansiyon_Otomasyonu\Pansiyon_Otomasyonu\obj\Debug\Pansiyon_Otomasyonu.csproj.CoreCompileInputs.cache
@@ -25,3 +24,7 @@ C:\Users\taylan.akyol\Desktop\Pansiyon\Pansiyon_Otomasyonu\Pansiyon_Otomasyonu\o
 C:\Users\taylan.akyol\Desktop\Pansiyon\Pansiyon_Otomasyonu\Pansiyon_Otomasyonu\obj\Debug\Pansiyon_Otomasyonu.FrmAdminGiris.resources
 C:\Users\taylan.akyol\Desktop\Pansiyon\Pansiyon_Otomasyonu\Pansiyon_Otomasyonu\obj\Debug\Pansiyon_Otomasyonu.FrmOdalar.resources
 C:\Users\taylan.akyol\Desktop\Pansiyon\Pansiyon_Otomasyonu\Pansiyon_Otomasyonu\obj\Debug\Pansiyon_Otomasyonu.FrmMusteriler.resources
+C:\Users\Asus\Desktop\Pansiyon_Otomasyonu\Pansiyon_Otomasyonu\Pansiyon_Otomasyonu\obj\Debug\Pansiyon_Otomasyonu.FrmAdminGiris.resources
+C:\Users\Asus\Desktop\Pansiyon_Otomasyonu\Pansiyon_Otomasyonu\Pansiyon_Otomasyonu\obj\Debug\Pansiyon_Otomasyonu.FrmAnaForm.resources
+C:\Users\Asus\Desktop\Pansiyon_Otomasyonu\Pansiyon_Otomasyonu\Pansiyon_Otomasyonu\obj\Debug\Pansiyon_Otomasyonu.FrmMusteriler.resources
+C:\Users\Asus\Desktop\Pansiyon_Otomasyonu\Pansiyon_Otomasyonu\Pansiyon_Otomasyonu\obj\Debug\Pansiyon_Otomasyonu.FrmOdalar.resources

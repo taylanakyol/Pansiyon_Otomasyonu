@@ -41,9 +41,9 @@
             this.columnHeader10 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader11 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.BtnVerileriGoster = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.BtnGuncelle = new System.Windows.Forms.Button();
+            this.BtnSil = new System.Windows.Forms.Button();
+            this.BtnAra = new System.Windows.Forms.Button();
             this.label11 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label9 = new System.Windows.Forms.Label();
@@ -64,6 +64,9 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.BtnTemizle = new System.Windows.Forms.Button();
+            this.TxtAra = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // listView1
@@ -89,6 +92,7 @@
             this.listView1.TabIndex = 0;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
+            this.listView1.DoubleClick += new System.EventHandler(this.listView1_DoubleClick);
             // 
             // columnHeader1
             // 
@@ -155,45 +159,49 @@
             this.BtnVerileriGoster.UseVisualStyleBackColor = true;
             this.BtnVerileriGoster.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button1
+            // BtnGuncelle
             // 
-            this.button1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button1.Location = new System.Drawing.Point(919, 76);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(253, 45);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Güncelle";
-            this.button1.UseVisualStyleBackColor = true;
+            this.BtnGuncelle.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.BtnGuncelle.Location = new System.Drawing.Point(919, 76);
+            this.BtnGuncelle.Name = "BtnGuncelle";
+            this.BtnGuncelle.Size = new System.Drawing.Size(253, 45);
+            this.BtnGuncelle.TabIndex = 2;
+            this.BtnGuncelle.Text = "Güncelle";
+            this.BtnGuncelle.UseVisualStyleBackColor = true;
+            this.BtnGuncelle.Click += new System.EventHandler(this.BtnGuncelle_Click);
             // 
-            // button2
+            // BtnSil
             // 
-            this.button2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button2.Location = new System.Drawing.Point(919, 155);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(253, 45);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "Sil";
-            this.button2.UseVisualStyleBackColor = true;
+            this.BtnSil.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.BtnSil.Location = new System.Drawing.Point(919, 155);
+            this.BtnSil.Name = "BtnSil";
+            this.BtnSil.Size = new System.Drawing.Size(253, 45);
+            this.BtnSil.TabIndex = 3;
+            this.BtnSil.Text = "Sil";
+            this.BtnSil.UseVisualStyleBackColor = true;
+            this.BtnSil.Click += new System.EventHandler(this.BtnSil_Click);
             // 
-            // button3
+            // BtnAra
             // 
-            this.button3.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button3.Location = new System.Drawing.Point(919, 235);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(253, 45);
-            this.button3.TabIndex = 4;
-            this.button3.Text = "Ara";
-            this.button3.UseVisualStyleBackColor = true;
+            this.BtnAra.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.BtnAra.Location = new System.Drawing.Point(919, 297);
+            this.BtnAra.Name = "BtnAra";
+            this.BtnAra.Size = new System.Drawing.Size(253, 45);
+            this.BtnAra.TabIndex = 4;
+            this.BtnAra.Text = "Ara";
+            this.BtnAra.UseVisualStyleBackColor = true;
+            this.BtnAra.Click += new System.EventHandler(this.BtnAra_Click);
             // 
             // label11
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label11.Location = new System.Drawing.Point(854, 291);
+            this.label11.Location = new System.Drawing.Point(85, 328);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(45, 23);
+            this.label11.Size = new System.Drawing.Size(55, 23);
             this.label11.TabIndex = 60;
-            this.label11.Text = "İsim:";
+            this.label11.Text = "Ücret:";
+            this.label11.Click += new System.EventHandler(this.label11_Click);
             // 
             // comboBox1
             // 
@@ -222,7 +230,7 @@
             // 
             this.TxtUcret.BackColor = System.Drawing.SystemColors.Info;
             this.TxtUcret.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.TxtUcret.Location = new System.Drawing.Point(921, 286);
+            this.TxtUcret.Location = new System.Drawing.Point(162, 323);
             this.TxtUcret.Name = "TxtUcret";
             this.TxtUcret.Size = new System.Drawing.Size(251, 31);
             this.TxtUcret.TabIndex = 57;
@@ -230,7 +238,7 @@
             // DtpCikisTarihi
             // 
             this.DtpCikisTarihi.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.DtpCikisTarihi.Location = new System.Drawing.Point(162, 366);
+            this.DtpCikisTarihi.Location = new System.Drawing.Point(162, 414);
             this.DtpCikisTarihi.Name = "DtpCikisTarihi";
             this.DtpCikisTarihi.Size = new System.Drawing.Size(251, 31);
             this.DtpCikisTarihi.TabIndex = 56;
@@ -238,7 +246,7 @@
             // DtpGirisTarihi
             // 
             this.DtpGirisTarihi.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.DtpGirisTarihi.Location = new System.Drawing.Point(162, 322);
+            this.DtpGirisTarihi.Location = new System.Drawing.Point(162, 370);
             this.DtpGirisTarihi.Name = "DtpGirisTarihi";
             this.DtpGirisTarihi.Size = new System.Drawing.Size(251, 31);
             this.DtpGirisTarihi.TabIndex = 55;
@@ -303,7 +311,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label8.Location = new System.Drawing.Point(40, 373);
+            this.label8.Location = new System.Drawing.Point(40, 421);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(94, 23);
             this.label8.TabIndex = 48;
@@ -313,7 +321,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label7.Location = new System.Drawing.Point(40, 329);
+            this.label7.Location = new System.Drawing.Point(40, 377);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(92, 23);
             this.label7.TabIndex = 47;
@@ -379,6 +387,36 @@
             this.label1.TabIndex = 41;
             this.label1.Text = "Adı:";
             // 
+            // BtnTemizle
+            // 
+            this.BtnTemizle.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.BtnTemizle.Location = new System.Drawing.Point(919, 226);
+            this.BtnTemizle.Name = "BtnTemizle";
+            this.BtnTemizle.Size = new System.Drawing.Size(253, 45);
+            this.BtnTemizle.TabIndex = 61;
+            this.BtnTemizle.Text = "Temizle";
+            this.BtnTemizle.UseVisualStyleBackColor = true;
+            this.BtnTemizle.Click += new System.EventHandler(this.BtnTemizle_Click);
+            // 
+            // TxtAra
+            // 
+            this.TxtAra.BackColor = System.Drawing.SystemColors.Info;
+            this.TxtAra.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.TxtAra.Location = new System.Drawing.Point(921, 348);
+            this.TxtAra.Name = "TxtAra";
+            this.TxtAra.Size = new System.Drawing.Size(251, 31);
+            this.TxtAra.TabIndex = 63;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label10.Location = new System.Drawing.Point(852, 353);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(40, 23);
+            this.label10.TabIndex = 62;
+            this.label10.Text = "Ara:";
+            // 
             // FrmMusteriler
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -386,6 +424,9 @@
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(1173, 640);
+            this.Controls.Add(this.TxtAra);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.BtnTemizle);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label9);
@@ -406,9 +447,9 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.BtnAra);
+            this.Controls.Add(this.BtnSil);
+            this.Controls.Add(this.BtnGuncelle);
             this.Controls.Add(this.BtnVerileriGoster);
             this.Controls.Add(this.listView1);
             this.MaximizeBox = false;
@@ -435,9 +476,9 @@
         private System.Windows.Forms.ColumnHeader columnHeader10;
         private System.Windows.Forms.ColumnHeader columnHeader11;
         private System.Windows.Forms.Button BtnVerileriGoster;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button BtnGuncelle;
+        private System.Windows.Forms.Button BtnSil;
+        private System.Windows.Forms.Button BtnAra;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label9;
@@ -458,5 +499,8 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button BtnTemizle;
+        private System.Windows.Forms.TextBox TxtAra;
+        private System.Windows.Forms.Label label10;
     }
 }

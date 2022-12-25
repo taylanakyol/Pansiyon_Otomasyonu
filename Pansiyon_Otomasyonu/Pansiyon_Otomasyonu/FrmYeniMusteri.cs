@@ -18,7 +18,7 @@ namespace Pansiyon_Otomasyonu
         {
             InitializeComponent();
         }
-        SqlConnection baglanti = new SqlConnection("Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=Pansiyon;Integrated Security=True");
+        SqlConnection baglanti = new SqlConnection("Data Source=DESKTOP-NB43UN3;Initial Catalog=Pansiyon;Integrated Security=True");
 
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -112,4 +112,4 @@ namespace Pansiyon_Otomasyonu
 
         }
     }
-}// Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=Pansiyon;Integrated Security=True
+}

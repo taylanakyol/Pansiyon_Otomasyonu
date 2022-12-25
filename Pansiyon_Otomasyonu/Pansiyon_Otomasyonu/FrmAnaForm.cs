@@ -42,5 +42,10 @@ namespace Pansiyon_Otomasyonu
             FrmMusteriler fr = new FrmMusteriler();
             fr.Show();
         }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Pansiyon Kayıt Uygulaması / 2022 - İstanbul");
+        }
     }
 }
