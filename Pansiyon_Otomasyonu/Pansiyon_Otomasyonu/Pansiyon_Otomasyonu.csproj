@@ -58,6 +58,12 @@
     <Compile Include="FrmAnaForm.Designer.cs">
       <DependentUpon>FrmAnaForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmGelirGider.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmGelirGider.Designer.cs">
+      <DependentUpon>FrmGelirGider.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmMusteriler.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -83,6 +89,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmAnaForm.resx">
       <DependentUpon>FrmAnaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmGelirGider.resx">
+      <DependentUpon>FrmGelirGider.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmMusteriler.resx">
       <DependentUpon>FrmMusteriler.cs</DependentUpon>

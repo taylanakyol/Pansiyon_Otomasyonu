@@ -142,6 +142,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.BtnOda109);
@@ -153,6 +154,7 @@
             this.Controls.Add(this.BtnOda103);
             this.Controls.Add(this.BtnOda102);
             this.Controls.Add(this.BtnOda101);
+            this.MaximizeBox = false;
             this.Name = "FrmOdalar";
             this.Text = "Odalar";
             this.Load += new System.EventHandler(this.FrmOdalar_Load);
