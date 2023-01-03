@@ -19,14 +19,14 @@ namespace Pansiyon_Otomasyonu
             InitializeComponent();
         }
 
-        SqlConnection baglanti = new SqlConnection("Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=Pansiyon;Integrated Security=True");
+        SqlConnection baglanti = new SqlConnection("Data Source=DESKTOP-NB43UN3;Initial Catalog=Pansiyon;Integrated Security=True");
 
         private void BtnGirisYap_Click(object sender, EventArgs e)
         {
             try
             {
                 baglanti.Open();
-                string sql = "select * from AdminGiris where Kullanici=@Kullaniciadi AND Sifre=@Sifresi";
+                string sql = "select * from AdminGiris where KullaniciAdi=@Kullaniciadi AND Sifre=@Sifresi";
                 SqlParameter prm1 = new SqlParameter("Kullaniciadi", TxtKullaniciAdi.Text.Trim());
                 SqlParameter prm2 = new SqlParameter("Sifresi", TxtSifre.Text.Trim());
                 SqlCommand komut = new SqlCommand(sql, baglanti);

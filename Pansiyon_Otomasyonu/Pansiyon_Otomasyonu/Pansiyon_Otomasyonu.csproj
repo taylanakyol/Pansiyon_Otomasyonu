@@ -58,11 +58,23 @@
     <Compile Include="FrmAnaForm.Designer.cs">
       <DependentUpon>FrmAnaForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmGazeteler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmGazeteler.Designer.cs">
+      <DependentUpon>FrmGazeteler.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmGelirGider.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmGelirGider.Designer.cs">
       <DependentUpon>FrmGelirGider.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMesajlar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMesajlar.Designer.cs">
+      <DependentUpon>FrmMesajlar.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmMusteriler.cs">
       <SubType>Form</SubType>
@@ -75,6 +87,24 @@
     </Compile>
     <Compile Include="FrmOdalar.Designer.cs">
       <DependentUpon>FrmOdalar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRadyoDinle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRadyoDinle.Designer.cs">
+      <DependentUpon>FrmRadyoDinle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSifreGuncelle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSifreGuncelle.Designer.cs">
+      <DependentUpon>FrmSifreGuncelle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmStoklar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmStoklar.Designer.cs">
+      <DependentUpon>FrmStoklar.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmYeniMusteri.cs">
       <SubType>Form</SubType>
@@ -90,14 +120,29 @@
     <EmbeddedResource Include="FrmAnaForm.resx">
       <DependentUpon>FrmAnaForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmGazeteler.resx">
+      <DependentUpon>FrmGazeteler.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmGelirGider.resx">
       <DependentUpon>FrmGelirGider.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMesajlar.resx">
+      <DependentUpon>FrmMesajlar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmMusteriler.resx">
       <DependentUpon>FrmMusteriler.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmOdalar.resx">
       <DependentUpon>FrmOdalar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRadyoDinle.resx">
+      <DependentUpon>FrmRadyoDinle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSifreGuncelle.resx">
+      <DependentUpon>FrmSifreGuncelle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmStoklar.resx">
+      <DependentUpon>FrmStoklar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmYeniMusteri.resx">
       <DependentUpon>FrmYeniMusteri.cs</DependentUpon>
@@ -123,6 +168,25 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

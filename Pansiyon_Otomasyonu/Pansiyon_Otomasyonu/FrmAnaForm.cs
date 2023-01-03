@@ -51,7 +51,7 @@ namespace Pansiyon_Otomasyonu
         private void timer1_Tick(object sender, EventArgs e)
         {
             label1.Text = DateTime.Now.ToLongDateString();
-            label2.Text= DateTime.Now.ToLongTimeString();
+            label2.Text = DateTime.Now.ToLongTimeString();
 
 
         }
@@ -69,7 +69,37 @@ namespace Pansiyon_Otomasyonu
         private void button5_Click(object sender, EventArgs e)
         {
             FrmGelirGider fr = new FrmGelirGider();
-            fr.Show();  
+            fr.Show();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            FrmStoklar fr = new FrmStoklar();
+            fr.Show();
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            FrmRadyoDinle fr = new FrmRadyoDinle();
+            fr.Show();
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            FrmGazeteler fr = new FrmGazeteler();
+            fr.Show();
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            FrmSifreGuncelle fr = new FrmSifreGuncelle();
+            fr.Show();
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            FrmMesajlar fr = new FrmMesajlar();
+            fr.Show();
         }
     }
 }

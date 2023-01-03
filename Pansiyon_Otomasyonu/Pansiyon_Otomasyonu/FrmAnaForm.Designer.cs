@@ -122,6 +122,7 @@
             this.button6.TabIndex = 5;
             this.button6.Text = "Stoklar";
             this.button6.UseVisualStyleBackColor = false;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // button7
             // 
@@ -134,6 +135,7 @@
             this.button7.TabIndex = 6;
             this.button7.Text = "Müşteri Mesajları";
             this.button7.UseVisualStyleBackColor = false;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // button8
             // 
@@ -146,6 +148,7 @@
             this.button8.TabIndex = 7;
             this.button8.Text = "Radyo Dinle";
             this.button8.UseVisualStyleBackColor = false;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // button9
             // 
@@ -195,8 +198,9 @@
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(173, 84);
             this.button10.TabIndex = 11;
-            this.button10.Text = "Hava Durumu";
+            this.button10.Text = "Şifre Güncelle";
             this.button10.UseVisualStyleBackColor = false;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
             // 
             // button11
             // 
@@ -209,6 +213,7 @@
             this.button11.TabIndex = 12;
             this.button11.Text = "Gazeteler";
             this.button11.UseVisualStyleBackColor = false;
+            this.button11.Click += new System.EventHandler(this.button11_Click);
             // 
             // button12
             // 
