@@ -6,6 +6,6 @@ MSSQL Server Veri Tabanı Kullanılmıştır
 
 Müşteri Kaydı, Bilgilerin Güncellenmesi, Stok Takibi Gibi İşlemler Yapılmaktadır
 
-**Kullanıcı Adı : admin
+**Kullanıcı Adı : admin**
 ---
-Şifre : 123456**
+**Şifre : 123456**
